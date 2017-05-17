@@ -14,6 +14,7 @@ matrix:
   include:
     - os: osx
       language: generic
+      env: PATH=/usr/local/opt/qt/bin:$PATH
       before_install:
         - brew install qt
         - pip install pyside
