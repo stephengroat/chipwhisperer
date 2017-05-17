@@ -15,6 +15,7 @@ matrix:
     - os: osx
       language: generic
       before_install:
+        - brew install qt
         - pip install pyside
 install: pip install pyusb pyqtgraph
 script: pushd software && pip install .
