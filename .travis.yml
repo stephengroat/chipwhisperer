@@ -9,5 +9,10 @@ addons:
       - python-setuptools
       - avr-libc
       - gcc-avr
+matrix:
+  include:
+    - os: osx
+      language: generic
+      before_install: brew install pyside scipy
 install: pip install pyusb pyqtgraph
 script: pushd software && pip install .
