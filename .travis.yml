@@ -10,4 +10,4 @@ addons:
       - avr-libc
       - gcc-avr
 install: pip install pyusb pyqtgraph
-script: pip install .
+script: pushd software && pip install .
