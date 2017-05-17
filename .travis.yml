@@ -1,0 +1,13 @@
+language: python
+addons:
+  apt:
+    packages:
+      - python-numpy
+      - python-scipy
+      - python-pyside
+      - python-configobj
+      - python-setuptools
+      - avr-libc
+      - gcc-avr
+install: pip install pyusb pyqtgraph
+script: pip install .
